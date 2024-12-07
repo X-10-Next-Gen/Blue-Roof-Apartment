@@ -93,6 +93,7 @@ a{
     position: absolute;
     width: 200px;
     margin: -100px 0 0 0;
+    margin-left:-500px;
     padding: 50px;
     padding-top:  125px;
     right: -100px;
