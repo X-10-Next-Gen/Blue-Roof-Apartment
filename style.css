@@ -96,7 +96,7 @@ transition: color 0.5s;
     display: none;
     position: absolute;
     top: 70px;
-    right: 20px;
+    right: -100px;
     width: 400px;
     padding: 20px;
     background-color: #89A9D9;
