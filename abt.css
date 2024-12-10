@@ -196,7 +196,6 @@ transition: color 0.5s;
         cursor: pointer;
         font-size: 1rem;
         position: relative;
-        left: 50%;
      }
      .grid2 button a{
         color: #000;
