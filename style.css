@@ -12,7 +12,7 @@ text-decoration: none;
 
 .header {
 background-color: #405CA8;
-border-radius: 10px;
+
 padding: 10px;
 display: flex;
 justify-content: space-between;
@@ -146,6 +146,13 @@ padding: 10px 20px;
 cursor: pointer;
 font-size: 1rem;
 }
+.grid1 button a ,.grid2 button a{
+    color: #000;
+}
+.grid1 button a:hover ,.grid2 button a:hover{
+    color: #ffffff;
+}
+
 
 .grid1 button:hover, .grid2 button:hover {
 background-color: #4a90e2;
@@ -217,6 +224,13 @@ border-radius: 15px;
 width: 100%;
 height: 350px;
 border-radius: 10px;
+}
+.chat{
+    color: #000;
+}
+.chat:hover{
+    color: #4a90e2;
+    transition: 0.5s ease;
 }
 footer {
     margin-top: 5%;
