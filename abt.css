@@ -1,0 +1,288 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    overflow-x: hidden;
+}
+
+a {
+text-decoration: none;
+}
+
+.header {
+background-color: #405CA8;
+
+padding: 10px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+list-style-type: none;
+}
+.header ul li{
+list-style-type: none;
+}
+
+.header img {
+max-width: 120px;
+height: auto;
+}
+
+.header h2 a {
+color: #fff;
+text-align: center;
+font-size: 1rem;
+font-family: cursive;
+}
+
+.header h2 a:hover {
+color: darkgray;
+transition: color 0.5s;
+}
+
+
+.meunToggle{
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 90px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.meunToggle input{
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+    -webkit-touch-callout: none;
+}
+.meunToggle span{
+    display: block;
+    width: 28px;
+    height: 3px;
+    margin-bottom: 2px;
+    position: relative;
+    background: #ffffff;
+    border-radius: 1px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s ,  background-colour 0.5s , opacity 0.55s ease;
+}
+.meunToggle span:first-child{
+    transform-origin: 0% 0%;
+}
+.meunToggle span:nth-child(2){
+    transform-origin: 0% 100%;
+}
+.meunToggle input:checked~span{
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px ,-1px);
+    background: #232323;
+}
+.meunToggle input:checked~:nth-last-child(3){
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2 ,0.2);
+}
+.meunToggle input:checked~span:nth-last-child(2){
+    opacity: 1;
+    transform: rotate(-45deg) translate(0, 1px);
+}
+.meun {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: -100px;
+    width: 400px;
+    padding: 20px;
+    background-color: #89A9D9;
+    border-radius: 20px;
+    z-index: 999; 
+}
+
+.meun li {
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+.meun li a {
+    color: #232323;
+    text-decoration: none;
+}
+
+.meun li a:hover {
+    color: #fff;
+    transition: 0.5s ease;
+}
+
+.meunToggle input:checked ~ .meun {
+    display: block; 
+}
+
+.img-slide-show {
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 20px;
+    overflow: hidden;
+    }
+    
+    .slideshow-container {
+    display: flex;
+    animation: slide 5s linear infinite;
+    }
+    
+    .img-slide-show img {
+    width: 100%;
+    height: auto;
+    }
+    @keyframes slide {
+
+        25%{
+            transform: translate(-0%);
+        }
+        50%{
+            transform: translate(-100%);
+        }
+     }
+
+
+     .contenta{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 15px;
+  
+     }
+     .a , .b , .c ,.d{
+        background-color: #89A9D9;
+        padding: 30px;
+        border-radius: 15px;
+        margin: 20px;
+     }
+     .grid{
+        display: grid;
+        grid-template-columns: auto ;
+        gap: 15px;
+        justify-content: center;
+       
+     }
+     .grid1{
+        width: 90%;
+        margin: 20px auto;
+        border-radius: 20px;
+        overflow: hidden;
+        
+     }
+     .grid1 img{
+        max-width: 100%;
+        border-radius: 15px;
+
+     }
+     .grid2{
+        background-color: #89A9D9;
+        padding: 20px;
+        border-radius: 15px;
+        margin: 20px ;
+     }
+     .grid2 button{
+        background-color: #ffffff;
+        border: none;
+        border-radius: 10px;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 1rem;
+        position: relative;
+        left: 50%;
+     }
+     .grid2 button a{
+        color: #000;
+     }
+     .grid2 button a:hover{
+        color: #ffffff;
+        transition: 0.5s ease;
+     }
+     .grid2 button:hover{
+        background-color: #4a90e2;
+        color: #ffffff;
+        transition: 0.5s ease;
+     }
+     .contact-us{
+        background-color: #89A9D9;
+        border-radius: 20px;
+        padding: 30px;
+        margin: 20px ;
+        
+     }
+     .contact-us button{
+        background-color: #ffffff;
+        border: none;
+        border-radius: 10px;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 1rem;
+     }
+     .contact-us button a{
+        color: #000;
+     }
+     .contact-us button a:hover{
+        color: #ffffff;
+        transition: 0.5s ease;
+     }
+     .contact-us button:hover{
+        background-color: #4a90e2;
+        color: #ffffff;
+        transition: 0.5s ease;
+     }
+
+     
+footer {
+    margin-top: 5%;
+background-color: #405CA8;
+color: #fff;
+text-align: center;
+padding: 20px;
+}
+
+footer a {
+color: #fff;
+text-decoration: none;
+}
+
+footer a:hover {
+color: darkgray;
+transition: all 0.5s ease;
+}
+.fcontainer{
+    display: grid;
+    grid-template-columns:  auto auto auto;
+}
+
+     @media (max-width :900px) {
+        .header{
+            flex-direction: column;
+            align-items: center;
+        }
+        .meun {
+            width: 200px;
+            border-radius: 20px;
+            top: 50px;
+            right: -100px;        
+        }
+        .img-slide-show {
+            width: 100%;
+            }
+            .contenta{
+                display: grid;
+                grid-template-columns: auto;
+            }
+            .fcontainer{
+                display: grid;
+                grid-template-columns:  auto;
+            }
+
+     }
+

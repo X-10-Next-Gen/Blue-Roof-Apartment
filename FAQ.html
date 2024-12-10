@@ -1,0 +1,12 @@
+<div>
+    <button class="faq-question">What is your cancellation policy?</button>
+    <div class="faq-answer" style="display: none;">You can cancel up to 48 hours before check-in...</div>
+  </div>
+  <script>
+    document.querySelectorAll('.faq-question').forEach(button => {
+      button.addEventListener('click', () => {
+        const answer = button.nextElementSibling;
+        answer.style.display = answer.style.display === 'none' ? 'block' : 'none';
+      });
+    });
+  </script>
