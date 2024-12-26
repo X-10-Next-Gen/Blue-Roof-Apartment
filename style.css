@@ -207,10 +207,7 @@ background-color: #89A9D9;
 padding: 30px;
 border-radius: 15px;
 }
-.cgrid5{
-    width: 93%;
-    margin-left: 15px;
-}
+
 
 .cgrid5 p{
     font-family:Verdana, Geneva, Tahoma, sans-serif ;
@@ -272,9 +269,9 @@ transition: all 0.5s ease;
         right: -100px;        
     }
     .cgrid5{
-        width: 77%;
+        
         iframe{
-            width: 102%;
+            width: 100%;
             margin-left: -10px;
 
         }
