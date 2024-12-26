@@ -292,7 +292,7 @@ grid-template-columns: auto;
     grid-template-columns: auto;
 }
 .cgrid1, .cgrid2, .cgrid3, .cgrid4 {
-    margin-left: -20px;
+    margin-left: -30px;
     background-color: #89A9D9;
     padding: 30px;
     border-radius: 15px;
