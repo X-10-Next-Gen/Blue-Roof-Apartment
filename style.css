@@ -204,7 +204,7 @@ margin: 25px;
 }
 .cgrid1, .cgrid2, .cgrid3, .cgrid4, .cgrid5 {
 background-color: #89A9D9;
-padding: 15px;
+padding: 30px;
 border-radius: 15px;
 }
 
@@ -291,5 +291,12 @@ grid-template-columns: auto;
     display: grid;
     grid-template-columns: auto;
 }
+.cgrid1, .cgrid2, .cgrid3, .cgrid4 {
+    margin-left: -20px;
+    background-color: #89A9D9;
+    padding: 30px;
+    border-radius: 15px;
+    }
+    
 }
 
