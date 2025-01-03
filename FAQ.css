@@ -1,0 +1,265 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #fff;
+    overflow: hidden;
+  }
+  *{
+    text-align: justify;
+}
+
+a {
+text-decoration: none;
+}
+b{
+    color: #fff;
+}
+
+.header {
+background-color: #405CA8;
+
+padding: 10px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+list-style-type: none;
+}
+.header ul li{
+list-style-type: none;
+}
+
+.header img {
+max-width: 120px;
+height: auto;
+}
+
+.header h2 a {
+color: #fff;
+text-align: center;
+font-size: 1rem;
+}
+
+.header h2 a:hover {
+color: darkgray;
+transition: color 0.5s;
+}
+
+
+.meunToggle{
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 90px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.meunToggle input{
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+    -webkit-touch-callout: none;
+}
+.meunToggle span{
+    display: block;
+    width: 28px;
+    height: 3px;
+    margin-bottom: 2px;
+    position: relative;
+    background: #ffffff;
+    border-radius: 1px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s ,  background-colour 0.5s , opacity 0.55s ease;
+}
+.meunToggle span:first-child{
+    transform-origin: 0% 0%;
+}
+.meunToggle span:nth-child(2){
+    transform-origin: 0% 100%;
+}
+.meunToggle input:checked~span{
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px ,-1px);
+    background: #232323;
+}
+.meunToggle input:checked~:nth-last-child(3){
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2 ,0.2);
+}
+.meunToggle input:checked~span:nth-last-child(2){
+    opacity: 1;
+    transform: rotate(-45deg) translate(0, 1px);
+}
+.meun {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: -100px;
+    width: 400px;
+    padding: 20px;
+    background-color: #89A9D9;
+    border-radius: 20px;
+    z-index: 999; 
+}
+
+.meun li {
+    padding: 10px 0;
+    font-size: 18px;
+    list-style-type: none;
+}
+
+.meun li a {
+    color: #232323;
+    text-decoration: none;
+}
+
+.meun li a:hover {
+    color: #fff;
+    transition: 0.5s ease;
+}
+
+.meunToggle input:checked ~ .meun {
+    display: block; 
+}
+
+
+
+
+
+
+
+  
+  .coming-soon {
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    animation: fadeIn 3s ease-in-out;
+  }
+  
+  .countdown {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    animation: fadeIn 4s ease-in-out;
+  }
+  
+  .time {
+    font-size: 2rem;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    h1 {
+      font-size: 2.5rem;
+    }
+  
+    p {
+      font-size: 1rem;
+    }
+  
+    .time {
+      padding: 15px 20px;
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 2rem;
+    }
+  
+    p {
+      font-size: 0.9rem;
+    }
+  
+    .time {
+      font-size: 1.2rem;
+      padding: 10px 15px;
+    }
+  
+    .countdown {
+      gap: 10px;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+    
+footer {
+    margin-top: 5%;
+background-color: #405CA8;
+color: #fff;
+text-align: center;
+padding: 20px;
+}
+
+footer a {
+color: #fff;
+text-decoration: none;
+}
+
+footer a:hover {
+color: darkgray;
+transition: all 0.5s ease;
+}
+.fcontainer{
+    display: grid;
+    grid-template-columns:  auto auto auto;
+} */
