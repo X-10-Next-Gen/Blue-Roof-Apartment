@@ -147,6 +147,12 @@ body {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+  .meun {
+    width: 200px;
+    border-radius: 20px;
+    top: 50px;
+    right: -100px;        
+}
     h1 {
       font-size: 2.5rem;
     }
@@ -162,6 +168,12 @@ body {
   }
   
   @media (max-width: 480px) {
+    .meun {
+      width: 200px;
+      border-radius: 20px;
+      top: 50px;
+      right: -100px;        
+  }
     h1 {
       font-size: 2rem;
     }
