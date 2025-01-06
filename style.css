@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     overflow-x: hidden;
 }
 
@@ -240,12 +240,15 @@ border-radius: 10px;
     transition: 0.5s ease;
 }
 footer {
-    width: 100%;
-    margin-top: 5%;
+width: 100%;
+margin-top: 5%;
 background-color: #405CA8;
 color: #fff;
 text-align: center;
 padding: 20px;
+ ul li{
+    list-style-type: none;
+}
 }
 
 footer a {
@@ -255,9 +258,11 @@ text-decoration: none;
 
 footer a:hover {
 color: darkgray;
-transition: all 0.5s ease;
+transition: all 0.5s ease; 
+
 }
 .fcontainer{
+  
     display: grid;
     grid-template-columns: repeat(3 ,1fr);
 }
