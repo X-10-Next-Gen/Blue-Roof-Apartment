@@ -195,11 +195,14 @@ transition: color 0.5s;
 
     
 footer {
-    margin-top: 5%;
+margin-top: 5%;
 background-color: #405CA8;
 color: #fff;
 text-align: center;
 padding: 20px;
+ul li{
+    list-style-type: none;
+}
 }
 
 footer a {
@@ -222,5 +225,11 @@ transition: all 0.5s ease;
         justify-content: center;
         justify-self: center;
         text-align: center;
+    }
+    .meun {
+        width: 200px;
+        border-radius: 20px;
+        top: 50px;
+        right: -100px;        
     }
 }
